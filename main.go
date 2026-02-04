@@ -7,14 +7,6 @@ func main() {
 }
 
 func a() {
-	go b()
-	go b()
-	for {
-		log.Println(1 + 1)
-	}
-}
-
-func b() {
 	go a()
 	go a()
 	for {
