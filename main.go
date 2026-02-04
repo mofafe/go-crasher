@@ -3,12 +3,8 @@ package main
 import "log"
 
 func main() {
-	a()
-}
-
-func a() {
-	go a()
-	go a()
+	go main()
+	go main()
 	for {
 		log.Println(1 + 1)
 	}
